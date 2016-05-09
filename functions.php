@@ -26,7 +26,7 @@
 		?>
 			<script>
 				<?php echo file_get_contents( get_template_directory_uri() . '/dist/js/detects.min.' . $keel_theme->get( 'Version' ) . '.js' ); ?>
-				loadCSS('http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic');
+				loadCSS('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic');
 			</script>
 		<?php
 	}
@@ -43,7 +43,7 @@
 		?>
 			<!-- Fallback for noJS -->
 			<noscript>
-				<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+				<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 			</noscript>
 
 			<script>

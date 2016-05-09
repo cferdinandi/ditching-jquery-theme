@@ -1,8 +1,8 @@
 /*!
- * gomakethings v10.22.2: The WordPress theme for GoMakeThings.com
+ * ditching-jquery v1.0.0: The WordPress theme for DitchingjQuery.com
  * (c) 2016 Chris Ferdinandi
  * MIT License
- * https://github.com/cferdinandi/gomakethings
+ * https://github.com/cferdinandi/ditching-jquery-theme
  * Open Source Credits: https://github.com/ftlabs/fastclick, https://github.com/toddmotto/fluidvids, http://prismjs.com
  */
 

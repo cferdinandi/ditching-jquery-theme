@@ -1,8 +1,8 @@
 /*!
- * gomakethings v10.22.2: The WordPress theme for GoMakeThings.com
+ * ditching-jquery v1.0.0: The WordPress theme for DitchingjQuery.com
  * (c) 2016 Chris Ferdinandi
  * MIT License
- * https://github.com/cferdinandi/gomakethings
+ * https://github.com/cferdinandi/ditching-jquery-theme
  * Open Source Credits: https://github.com/ftlabs/fastclick, https://github.com/toddmotto/fluidvids, http://prismjs.com
  */
 
@@ -45,7 +45,7 @@
  * Add box sizing to everything
  * @link http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  */
-/* line 23, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 23, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 *,
 *:before,
 *:after {
@@ -58,9 +58,9 @@
  * 3. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 36, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 36, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 html {
-  font-family: "PT Serif", Georgia, Times, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   /* 1 */
   overflow-y: scroll;
   /* 2 */
@@ -73,7 +73,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 45, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 45, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 body {
   margin: 0;
 }
@@ -84,7 +84,7 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 55, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 55, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 article,
 aside,
 cite,
@@ -106,7 +106,7 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 76, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 76, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -121,7 +121,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 88, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 88, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -130,7 +130,7 @@ audio:not([controls]) {
 /**
  * Prevent img and video elements from spilling outside of the page on smaller screens.
  */
-/* line 96, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 96, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 img,
 video {
   max-width: 100%;
@@ -141,7 +141,7 @@ video {
  * Prevent iframe, object, and embed elements from spilling outside of the page on smaller screens.
  * height: auto causes iframes to smush, so it's omitted here.
  */
-/* line 106, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 106, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 iframe,
 object,
 embed {
@@ -155,7 +155,7 @@ embed {
  * 1. Remove border when inside `a` element in IE 8/9/10.
  * 2. Prevents IE from making scaled images look like crap
  */
-/* line 123, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 123, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 img {
   border: 0;
   /* 1 */
@@ -166,7 +166,7 @@ img {
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 131, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 131, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -174,7 +174,7 @@ svg:not(:root) {
 /**
  * Address inconsistent margin.
  */
-/* line 138, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 138, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -183,7 +183,7 @@ figure {
  * @workaround Remove focus from <main> element when using tabindex="-1" hack for skipnav link
  * @link https://code.google.com/p/chromium/issues/detail?id=37721
  */
-/* line 146, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_normalize.scss */
+/* line 146, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_normalize.scss */
 .tabindex:focus {
   outline: none;
 }
@@ -195,7 +195,7 @@ figure {
 /**
  * Base grid styles: single column
  */
-/* line 9, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+/* line 9, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
 .container {
   max-width: 38em;
   width: 88%;
@@ -203,18 +203,18 @@ figure {
   margin-right: auto;
 }
 
-/* line 16, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+/* line 16, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
 .container-large {
   max-width: 60em;
 }
 
-/* line 20, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+/* line 20, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
 .row {
   margin-left: -1.4%;
   margin-right: -1.4%;
 }
 
-/* line 25, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+/* line 25, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
 .grid-third, .grid-half, .grid-two-thirds {
   float: left;
   width: 100%;
@@ -225,7 +225,7 @@ figure {
 /**
 * Reverses order of grid for content choreography
 */
-/* line 42, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+/* line 42, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
 .grid-flip {
   float: right;
 }
@@ -234,27 +234,27 @@ figure {
  * Add columns to grid on bigger screens
  */
 @media (min-width: 38em) {
-  /* line 53, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+  /* line 53, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
   .grid-third {
     width: 33.33333%;
   }
-  /* line 53, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+  /* line 53, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
   .grid-half {
     width: 50%;
   }
-  /* line 53, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+  /* line 53, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
   .grid-two-thirds {
     width: 66.66667%;
   }
-  /* line 59, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+  /* line 59, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
   .offset-third {
     margin-left: 33.33333%;
   }
-  /* line 59, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+  /* line 59, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
   .offset-half {
     margin-left: 50%;
   }
-  /* line 59, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_grid.scss */
+  /* line 59, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_grid.scss */
   .offset-two-thirds {
     margin-left: 66.66667%;
   }
@@ -267,9 +267,9 @@ figure {
  * @section Typography
  * Sets font styles for entire site
  */
-/* line 6, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 6, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 body {
-  font-family: "PT Serif", Georgia, Times, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
   color: #272727;
@@ -278,13 +278,13 @@ body {
 }
 
 @media (min-width: 38em) {
-  /* line 6, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+  /* line 6, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
   body {
     line-height: 1.5625;
   }
 }
 
-/* line 19, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 19, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 p {
   margin: 0 0 1.5625em;
 }
@@ -292,7 +292,7 @@ p {
 /**
  * Hyperlink styling
  */
-/* line 28, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 28, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 a, .link-block-styled {
   background-color: transparent;
   color: #0088cc;
@@ -303,12 +303,12 @@ a, .link-block-styled {
 /**
  * Remove default link styling
  */
-/* line 40, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 40, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 .link-plain, .link-plain:visited {
   color: #272727;
 }
 
-/* line 45, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 45, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 .link-plain:hover {
   color: #0088cc;
   text-decoration: none;
@@ -317,7 +317,7 @@ a, .link-block-styled {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 55, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 55, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 a:active, .link-block-styled:active,
 a:hover,
 .link-block-styled:hover,
@@ -325,7 +325,7 @@ a:hover,
   outline: 0;
 }
 
-/* line 60, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 60, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 a:hover, .link-block-styled:hover, .link-block:hover .link-block-styled,
 a:focus,
 .link-block-styled:focus,
@@ -338,7 +338,7 @@ a:active,
 /**
  * Creates block-level links
  */
-/* line 72, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 72, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 a.link-block, .link-block.link-block-styled {
   color: #272727;
   display: block;
@@ -348,14 +348,14 @@ a.link-block, .link-block.link-block-styled {
 /**
  * List styling
  */
-/* line 91, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 91, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 ul,
 ol {
   margin: 0 0 1.5625em 2em;
   padding: 0;
 }
 
-/* line 97, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 97, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -363,31 +363,31 @@ ol ul {
   margin-bottom: 0;
 }
 
-/* line 104, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 104, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 li {
   margin-bottom: 0.5em;
 }
 
 @media (min-width: 38em) {
-  /* line 104, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+  /* line 104, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
   li {
     margin-bottom: 0.25em;
   }
 }
 
-/* line 112, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 112, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 dl,
 dd {
   margin: 0;
   padding: 0;
 }
 
-/* line 118, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 118, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 dd {
   margin: 0 0 1.5625em;
 }
 
-/* line 122, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 122, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 dt {
   font-weight: bold;
 }
@@ -396,7 +396,7 @@ dt {
  * Removes list styling.
  * For semantic reasons, should only be used on unordered lists.
  */
-/* line 131, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 131, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 .list-unstyled {
   margin-left: 0;
   list-style: none;
@@ -405,7 +405,7 @@ dt {
 /**
  * Display lists inline
  */
-/* line 139, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 139, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 .list-inline {
   list-style: none;
   margin-left: -0.5em;
@@ -413,7 +413,7 @@ dt {
   padding: 0;
 }
 
-/* line 145, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 145, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 .list-inline li {
   display: inline-block;
   margin-left: 0.5em;
@@ -421,7 +421,7 @@ dt {
 }
 
 @media (max-width: 38em) {
-  /* line 152, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+  /* line 152, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
   .list-inline.list-inline-responsive li {
     display: block;
   }
@@ -431,16 +431,16 @@ dt {
  * Heading styling for h1 through h6 elements.
  * Heading class lets you use one heading type for semantics, but style it as another heading type.
  */
-/* line 164, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 164, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0 0 1em;
   padding: 1em 0 0;
   word-wrap: break-word;
 }
 
-/* line 183, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 183, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 h1,
 .h1 {
   font-size: 1.5em;
@@ -448,32 +448,32 @@ h1,
 }
 
 @media (min-width: 38em) {
-  /* line 183, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+  /* line 183, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
   h1,
   .h1 {
     font-size: 1.75em;
   }
 }
 
-/* line 193, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 194, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 h2,
 .h2 {
   font-size: 1.3125em;
 }
 
-/* line 198, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 199, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 h3,
 .h3 {
   font-size: 1.1875em;
 }
 
-/* line 203, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 204, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 h4, h5, h6,
 .h4, .h5, .h6 {
   font-size: 1em;
 }
 
-/* line 208, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 209, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 h4,
 .h4 {
   text-transform: uppercase;
@@ -482,7 +482,7 @@ h4,
 /**
  * Lines, Quotes and Emphasis
  */
-/* line 235, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 236, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 hr {
   margin: 2em auto;
   border: 0;
@@ -490,23 +490,23 @@ hr {
   border-bottom: 0 solid transparent;
 }
 
-/* line 242, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 243, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 .line-secondary {
   width: 50%;
 }
 
-/* line 246, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 247, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 .line-clear {
   border-top-color: transparent;
 }
 
-/* line 250, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 251, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 255, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 256, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 i,
 em {
   font-style: italic;
@@ -515,7 +515,7 @@ em {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 263, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 264, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 abbr[title] {
   border-bottom: 0.0725em dotted;
 }
@@ -523,7 +523,7 @@ abbr[title] {
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 270, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 271, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 dfn {
   font-style: italic;
 }
@@ -531,7 +531,7 @@ dfn {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 277, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 278, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 mark {
   background: #ff0;
 }
@@ -539,7 +539,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 284, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 285, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 small {
   font-size: 80%;
 }
@@ -547,7 +547,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 291, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 292, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 sub,
 sup {
   font-size: 75%;
@@ -556,12 +556,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 299, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 300, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 303, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 304, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 sub {
   bottom: -0.25em;
 }
@@ -569,7 +569,7 @@ sub {
 /**
  * Blockquotes
  */
-/* line 312, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 313, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 blockquote {
   font-size: 1.1875em;
   font-style: italic;
@@ -578,20 +578,20 @@ blockquote {
   padding-right: 0.84211em;
 }
 
-/* line 319, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 320, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 blockquote cite {
   color: #808080;
   font-size: 0.84211em;
   padding-top: 1em;
 }
 
-/* line 326, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 327, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 331, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_typography.scss */
+/* line 332, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_typography.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -604,7 +604,7 @@ q:after {
  * @section Code
  * Styling for code and preformatted text.
  */
-/* line 6, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_code.scss */
+/* line 6, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_code.scss */
 code,
 kbd,
 pre,
@@ -613,14 +613,14 @@ samp {
   font-size: 0.875em;
 }
 
-/* line 14, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_code.scss */
+/* line 14, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_code.scss */
 code {
   color: #dd1144;
   padding: 0.25em;
   word-wrap: break-word;
 }
 
-/* line 20, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_code.scss */
+/* line 20, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_code.scss */
 pre {
   background-color: #f4f4f4;
   display: block;
@@ -635,7 +635,7 @@ pre {
   word-break: break-all;
 }
 
-/* line 32, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_code.scss */
+/* line 32, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_code.scss */
 pre code {
   background-color: transparent;
   border: 0;
@@ -648,31 +648,31 @@ pre code {
  * @section Prism syntax highlighting
  */
 @media screen {
-  /* line 7, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_prism.scss */
+  /* line 7, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_prism.scss */
   .token.comment,
   .token.prolog,
   .token.doctype,
   .token.cdata {
     color: slategray;
   }
-  /* line 14, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_prism.scss */
+  /* line 14, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_prism.scss */
   .token.punctuation {
     color: #999;
   }
-  /* line 18, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_prism.scss */
+  /* line 18, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_prism.scss */
   .token.property,
   .token.tag,
   .token.boolean,
   .token.number {
     color: #905;
   }
-  /* line 25, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_prism.scss */
+  /* line 25, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_prism.scss */
   .token.selector,
   .token.attr-name,
   .token.string {
     color: #690;
   }
-  /* line 31, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_prism.scss */
+  /* line 31, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_prism.scss */
   .token.operator,
   .token.entity,
   .token.url,
@@ -680,22 +680,22 @@ pre code {
   .style .token.string {
     color: #a67f59;
   }
-  /* line 39, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_prism.scss */
+  /* line 39, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_prism.scss */
   .token.atrule,
   .token.attr-value,
   .token.keyword {
     color: #07a;
   }
-  /* line 46, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_prism.scss */
+  /* line 46, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_prism.scss */
   .token.regex,
   .token.important {
     color: #e90;
   }
-  /* line 51, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_prism.scss */
+  /* line 51, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_prism.scss */
   .token.important {
     font-weight: bold;
   }
-  /* line 55, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_prism.scss */
+  /* line 55, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_prism.scss */
   .token.entity {
     cursor: help;
   }
@@ -705,7 +705,7 @@ pre code {
  * @section Buttons
  * Styling for CSS buttons.
  */
-/* line 6, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_buttons.scss */
+/* line 6, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_buttons.scss */
 .btn, input[type="submit"] {
   background-color: transparent;
   border: 0.125em solid #fa7176;
@@ -719,7 +719,7 @@ pre code {
   padding: 0.5em 0.6875em;
 }
 
-/* line 19, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_buttons.scss */
+/* line 19, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_buttons.scss */
 .btn, input[type="submit"],
 .btn:hover,
 input[type="submit"]:hover,
@@ -738,7 +738,7 @@ input.active[type="submit"] {
   color: #f7272f;
 }
 
-/* line 30, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_buttons.scss */
+/* line 30, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_buttons.scss */
 .btn:hover, input[type="submit"]:hover,
 a .btn:hover, .link-block-styled .btn:hover,
 a input[type="submit"]:hover, .link-block-styled input[type="submit"]:hover,
@@ -758,7 +758,7 @@ input.active[type="submit"] {
   text-decoration: none;
 }
 
-/* line 60, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_buttons.scss */
+/* line 60, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_buttons.scss */
 .btn:active, input[type="submit"]:active,
 .btn.active,
 input.active[type="submit"] {
@@ -766,14 +766,14 @@ input.active[type="submit"] {
   outline: 0;
 }
 
-/* line 75, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_buttons.scss */
+/* line 75, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_buttons.scss */
 .btn-large {
   padding: 0.6875em 0.9375em;
   font-size: 1em;
   line-height: normal;
 }
 
-/* line 92, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_buttons.scss */
+/* line 92, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_buttons.scss */
 .btn, input[type="submit"],
 button,
 html input[type="button"],
@@ -790,7 +790,7 @@ input[type="submit"] {
   -webkit-appearance: none;
 }
 
-/* line 109, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_buttons.scss */
+/* line 109, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_buttons.scss */
 .btn:last-child, input[type="submit"]:last-child,
 input.btn,
 input[type="submit"] {
@@ -801,19 +801,19 @@ input[type="submit"] {
  * @section Forms
  * Styling for form elements.
  */
-/* line 6, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 6, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 form,
 fieldset {
   margin: 0 0 1.5625em;
 }
 
-/* line 11, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 11, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 fieldset {
   border: 0;
   padding: 0;
 }
 
-/* line 16, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 16, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 legend,
 label {
   display: block;
@@ -828,7 +828,7 @@ label {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 30, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 30, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 button,
 input,
 optgroup,
@@ -846,7 +846,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 44, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 44, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 button {
   overflow: visible;
 }
@@ -857,13 +857,13 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 54, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 54, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 59, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 59, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 input,
 select,
 textarea {
@@ -875,7 +875,7 @@ textarea {
 }
 
 @media (min-width: 38em) {
-  /* line 59, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+  /* line 59, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
   input,
   select,
   textarea {
@@ -887,18 +887,18 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 77, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 77, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 optgroup {
   font-weight: bold;
 }
 
-/* line 86, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 86, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 textarea {
   height: 12em;
   overflow: auto;
 }
 
-/* line 91, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 91, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 input[type="image"],
 input[type="checkbox"],
 input[type="radio"] {
@@ -915,13 +915,13 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 107, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 107, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 112, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 112, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 input:focus,
 textarea:focus {
   border-color: rgba(82, 168, 236, 0.8);
@@ -930,7 +930,7 @@ textarea:focus {
   outline: thin dotted \9;
 }
 
-/* line 120, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 120, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 input[type="file"]:focus,
 input[type="checkbox"]:focus,
 select:focus {
@@ -942,7 +942,7 @@ select:focus {
 /**
  * Inline inputs
  */
-/* line 132, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 132, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 .input-inline, input[type="submit"] {
   display: inline-block;
   width: auto;
@@ -957,13 +957,13 @@ select:focus {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 157, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 157, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 162, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 162, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 .input-search {
   width: 85%;
   padding-left: 0.9375em;
@@ -974,13 +974,13 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 @media (min-width: 38em) {
-  /* line 162, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+  /* line 162, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
   .input-search {
     width: 65%;
   }
 }
 
-/* line 174, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 174, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 .btn-search {
   display: inline;
   color: #808080;
@@ -990,17 +990,17 @@ input[type="search"]::-webkit-search-decoration {
   margin-bottom: 0;
 }
 
-/* line 183, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 183, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 .btn-search:hover {
   color: #5a5a5a;
 }
 
-/* line 187, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 187, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 .btn-search .icon {
   fill: #808080;
 }
 
-/* line 191, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_forms.scss */
+/* line 191, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_forms.scss */
 .btn-search:hover .icon {
   fill: #5a5a5a;
 }
@@ -1012,7 +1012,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Styling for for WP subscribe to comment checkbox label
  */
-/* line 10, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_wordpress-forms.scss */
+/* line 10, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_wordpress-forms.scss */
 #subscribe-label {
   display: inline;
 }
@@ -1026,7 +1026,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Hide icons by default to prevent blank spaces in unsupported browsers
  */
-/* line 11, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 11, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .icon {
   display: inline-block;
   fill: currentColor;
@@ -1038,7 +1038,7 @@ input[type="search"]::-webkit-search-decoration {
  * Display icons when browser supports SVG.
  * Inherit height, width, and color.
  */
-/* line 22, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 22, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .svg .icon {
   height: 1em;
   width: auto;
@@ -1047,12 +1047,12 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Icon sizes
  */
-/* line 32, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 32, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .svg .icon-large {
   height: 2em;
 }
 
-/* line 36, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 36, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .svg .icon-xlarge {
   height: 3em;
 }
@@ -1060,42 +1060,42 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Icon colors
  */
-/* line 45, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 45, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .icon-black {
   fill: #272727;
 }
 
-/* line 46, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 46, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .icon-gray {
   fill: #808080;
 }
 
-/* line 47, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 47, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .icon-primary {
   fill: #0088cc;
 }
 
-/* line 48, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 48, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .icon-secondary {
   fill: #f94f55;
 }
 
-/* line 49, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 49, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .icon-accent {
   fill: #feca41;
 }
 
-/* line 50, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 50, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .icon-petfinder {
   fill: #4b1f6f;
 }
 
-/* line 51, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 51, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 .icon-paws {
   fill: #6aa120;
 }
 
-/* line 53, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_svgs.scss */
+/* line 53, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_svgs.scss */
 a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link-block-styled .icon-link {
   fill: #005580;
 }
@@ -1104,14 +1104,14 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * Hide fallback text if browser supports SVG
  */
 /*  Adds a border */
-/* line 2, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_snapshot.scss */
+/* line 2, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_snapshot.scss */
 .img-border {
   border: 0.0725em solid #cccccc;
 }
 
 /*  Adds a 50% border radius,
  *  turning square images into a circle. */
-/* line 16, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_snapshot.scss */
+/* line 16, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_snapshot.scss */
 .img-circle, .avatar {
   border-radius: 50%;
 }
@@ -1124,7 +1124,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * Comment Avatar Styling
  * Class automatically applied to comment avatars.
  */
-/* line 10, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_wordpress-images.scss */
+/* line 10, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_wordpress-images.scss */
 .avatar {
   float: left;
   margin-right: 0.5em;
@@ -1139,7 +1139,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Image alignment
  */
-/* line 26, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_wordpress-images.scss */
+/* line 26, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_wordpress-images.scss */
 .aligncenter, .alignleft, .alignright, .alignnone {
   display: block;
   text-align: center;
@@ -1148,7 +1148,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (min-width: 28em) {
-  /* line 33, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_wordpress-images.scss */
+  /* line 33, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_wordpress-images.scss */
   .alignleft {
     float: left;
     margin-right: 0.5em;
@@ -1156,7 +1156,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (min-width: 28em) {
-  /* line 42, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_wordpress-images.scss */
+  /* line 42, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_wordpress-images.scss */
   .alignright {
     float: right;
     margin-left: 0.5em;
@@ -1164,7 +1164,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (min-width: 28em) {
-  /* line 51, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_wordpress-images.scss */
+  /* line 51, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_wordpress-images.scss */
   .alignnone {
     margin-left: 0;
     margin-right: 0;
@@ -1174,7 +1174,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Image Caption Styling
  */
-/* line 63, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_wordpress-images.scss */
+/* line 63, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_wordpress-images.scss */
 .wp-caption-text {
   font-size: 0.9375em;
   font-style: italic;
@@ -1187,19 +1187,19 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * @section Background
  * Background color
  */
-/* line 6, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_bg.scss */
+/* line 6, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_bg.scss */
 .bg {
   background-color: #343d4d;
   color: #ffffff;
 }
 
-/* line 10, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_bg.scss */
+/* line 10, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_bg.scss */
 .bg a, .bg .link-block-styled {
   color: #ffffff;
   text-decoration: underline;
 }
 
-/* line 16, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_bg.scss */
+/* line 16, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_bg.scss */
 .bg-hero {
   background-image: url("../img/hero-xsmall.jpg");
   background-position: bottom center;
@@ -1207,21 +1207,21 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (min-width: 28em) {
-  /* line 16, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_bg.scss */
+  /* line 16, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_bg.scss */
   .bg-hero {
     background-image: url("../img/hero-small.jpg");
   }
 }
 
 @media (min-width: 38em) {
-  /* line 16, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_bg.scss */
+  /* line 16, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_bg.scss */
   .bg-hero {
     background-image: url("../img/hero-medium.jpg");
   }
 }
 
 @media (min-width: 60em) {
-  /* line 16, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_bg.scss */
+  /* line 16, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_bg.scss */
   .bg-hero {
     background-image: url("../img/hero-full.jpg");
   }
@@ -1230,7 +1230,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * The navigation container
  */
-/* line 4, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+/* line 4, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
 .nav-wrap {
   padding-top: 1em;
   padding-bottom: 0.5em;
@@ -1238,14 +1238,14 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (min-width: 60em) {
-  /* line 4, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+  /* line 4, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
   .nav-wrap {
     text-align: left;
   }
 }
 
 @media (max-width: 60em) {
-  /* line 15, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+  /* line 15, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
   .js-astro .nav-wrap {
     text-align: left;
   }
@@ -1254,7 +1254,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * The logo
  */
-/* line 25, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+/* line 25, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
 .logo {
   display: inline-block;
   font-size: 1.2em;
@@ -1266,7 +1266,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (min-width: 60em) {
-  /* line 25, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+  /* line 25, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
   .logo {
     float: left;
     margin-bottom: 0;
@@ -1274,19 +1274,19 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (max-width: 60em) {
-  /* line 40, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+  /* line 40, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
   .js-astro .logo {
     float: left;
   }
 }
 
-/* line 45, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+/* line 45, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
 .logo:hover {
   color: #0088cc;
   text-decoration: none;
 }
 
-/* line 50, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+/* line 50, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
 .logo .icon {
   height: 0.8em;
   width: 0.8em;
@@ -1295,7 +1295,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * The nav menu
  */
-/* line 60, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+/* line 60, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
 .nav {
   list-style: none;
   font-size: 0.9375em;
@@ -1307,27 +1307,27 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (min-width: 28em) {
-  /* line 60, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+  /* line 60, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
   .nav {
     font-size: 1em;
   }
 }
 
 @media (min-width: 60em) {
-  /* line 60, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+  /* line 60, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
   .nav {
     text-align: right;
   }
 }
 
 @media (max-width: 60em) {
-  /* line 75, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+  /* line 75, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
   .js-astro .nav {
     text-align: left;
   }
 }
 
-/* line 80, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+/* line 80, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
 .nav li {
   display: inline-block;
   float: none;
@@ -1336,7 +1336,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (max-width: 60em) {
-  /* line 87, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+  /* line 87, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
   .js-astro .nav li {
     display: block;
     width: 100%;
@@ -1345,12 +1345,12 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   }
 }
 
-/* line 96, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+/* line 96, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
 .nav a, .nav .link-block-styled {
   color: #808080;
 }
 
-/* line 103, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_astro-navbar.scss */
+/* line 103, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_astro-navbar.scss */
 .nav a:hover, .nav .link-block-styled:hover, .nav .link-block:hover .link-block-styled, .link-block:hover .nav .link-block-styled,
 .nav a:active,
 .nav .link-block-styled:active,
@@ -1373,7 +1373,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 
 /*  Removes default browser settings
  *  and evens out inconsistencies. */
-/* line 3, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+/* line 3, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -1382,27 +1382,27 @@ table {
   width: 100%;
 }
 
-/* line 11, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+/* line 11, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
 th,
 td {
   text-align: left;
   padding: 0.5em;
 }
 
-/* line 17, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+/* line 17, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
 th {
   background-color: #f2f2f2;
   font-weight: bold;
   vertical-align: bottom;
 }
 
-/* line 23, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+/* line 23, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
 td {
   border-top: 0.0725em solid #ededed;
   vertical-align: top;
 }
 
-/* line 28, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+/* line 28, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
 tbody tr:nth-child(even) {
   background-color: #f7f7f7;
 }
@@ -1413,36 +1413,36 @@ tbody tr:nth-child(even) {
  * @link https://techblog.livingsocial.com/blog/2015/04/06/responsive-tables-in-pure-css/
  */
 @media (max-width: 38em) {
-  /* line 43, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+  /* line 43, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
   .table-responsive {
     border: 0;
   }
-  /* line 46, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+  /* line 46, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
   .table-responsive thead {
     display: none;
     visibility: hidden;
   }
-  /* line 51, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+  /* line 51, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
   .table-responsive tr {
     border-top: 0.0725em solid #ededed;
     display: block;
     padding: 0.5em;
   }
-  /* line 56, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+  /* line 56, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
   .table-responsive tr:nth-child(even) {
     background-color: transparent;
   }
-  /* line 60, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+  /* line 60, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
   .table-responsive tr:nth-child(odd) {
     background-color: #f7f7f7;
   }
-  /* line 65, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+  /* line 65, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
   .table-responsive td {
     border: 0;
     display: block;
     padding: 0.25em;
   }
-  /* line 71, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_tables.scss */
+  /* line 71, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_tables.scss */
   .table-responsive td:before {
     content: attr(data-label);
     display: block;
@@ -1457,7 +1457,7 @@ tbody tr:nth-child(even) {
 /**
  * Text transforms
  */
-/* line 30, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 30, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -1465,32 +1465,32 @@ tbody tr:nth-child(even) {
 /**
  * Text sizes
  */
-/* line 39, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 39, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .text-small {
   font-size: 0.9375em;
 }
 
-/* line 43, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 43, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .text-large {
   font-size: 1.1875em;
   line-height: 1.4;
 }
 
 @media (min-width: 38em) {
-  /* line 43, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+  /* line 43, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
   .text-large {
     font-size: 1.3125em;
   }
 }
 
-/* line 52, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 52, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .text-xlarge {
   font-size: 1.7em;
   line-height: 1.4;
 }
 
 @media (min-width: 38em) {
-  /* line 52, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+  /* line 52, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
   .text-xlarge {
     font-size: 2em;
   }
@@ -1499,12 +1499,12 @@ tbody tr:nth-child(even) {
 /**
  * Text colors
  */
-/* line 66, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 66, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .text-muted {
   color: #808080;
 }
 
-/* line 70, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 70, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .text-secondary {
   color: #fa7176;
 }
@@ -1512,19 +1512,19 @@ tbody tr:nth-child(even) {
 /**
  * Text alignment
  */
-/* line 79, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 79, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .text-center {
   text-align: center;
 }
 
 @media (min-width: 38em) {
-  /* line 84, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+  /* line 84, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
   .text-right-large {
     text-align: right;
   }
 }
 
-/* line 106, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 106, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .float-center {
   float: none;
   margin-left: auto;
@@ -1534,42 +1534,42 @@ tbody tr:nth-child(even) {
 /**
  * Margins
  */
-/* line 121, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 121, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 125, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 125, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .no-margin-top {
   margin-top: 0;
 }
 
-/* line 129, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 129, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .no-margin-bottom {
   margin-bottom: 0;
 }
 
-/* line 133, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 133, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .margin-top {
   margin-top: 1.5625em;
 }
 
-/* line 137, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 137, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .margin-bottom {
   margin-bottom: 1.5625em;
 }
 
-/* line 141, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 141, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .margin-bottom-small {
   margin-bottom: 0.5em;
 }
 
-/* line 145, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 145, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .margin-bottom-large {
   margin-bottom: 2em;
 }
 
-/* line 149, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 149, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .margin-right {
   margin-right: 0.25em;
 }
@@ -1577,57 +1577,57 @@ tbody tr:nth-child(even) {
 /**
  * Padding
  */
-/* line 158, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 158, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 162, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 162, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .no-padding-top {
   padding-top: 0;
 }
 
-/* line 166, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 166, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .no-padding-bottom {
   padding-bottom: 0;
 }
 
-/* line 170, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 170, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .padding-top {
   padding-top: 1.5625em;
 }
 
-/* line 174, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 174, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .padding-top-small {
   padding-top: 0.5em;
 }
 
-/* line 178, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 178, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .padding-top-large {
   padding-top: 2em;
 }
 
-/* line 182, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 182, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .padding-top-xlarge {
   padding-top: 3em;
 }
 
-/* line 186, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 186, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .padding-bottom {
   padding-bottom: 1.5625em;
 }
 
-/* line 190, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 190, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .padding-bottom-small {
   padding-bottom: 0.5em;
 }
 
-/* line 194, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 194, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .padding-bottom-large {
   padding-bottom: 2em;
 }
 
-/* line 198, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 198, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .padding-bottom-xlarge {
   padding-bottom: 3em;
 }
@@ -1640,7 +1640,7 @@ tbody tr:nth-child(even) {
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  * @link http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 212, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 212, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .screen-reader, .svg .icon-fallback-text {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1657,7 +1657,7 @@ tbody tr:nth-child(even) {
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  * @link https://www.drupal.org/node/897638
  */
-/* line 228, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 228, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .screen-reader-focusable:active,
 .screen-reader-focusable:focus {
   clip: auto;
@@ -1673,7 +1673,7 @@ tbody tr:nth-child(even) {
  * @affected IE 8/9/10
  * @link http://juicystudio.com/article/screen-readers-display-none.php
  */
-/* line 243, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 243, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 [hidden], template, .tarpit {
   display: none;
   visibility: hidden;
@@ -1684,7 +1684,7 @@ tbody tr:nth-child(even) {
  * The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document.
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  */
-/* line 255, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 255, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .clearfix:before, .container:before,
 .row:before, .nav-wrap:before,
 .clearfix:after,
@@ -1695,7 +1695,7 @@ tbody tr:nth-child(even) {
   content: " ";
 }
 
-/* line 261, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_overrides.scss */
+/* line 261, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_overrides.scss */
 .clearfix:after, .container:after,
 .row:after, .nav-wrap:after {
   clear: both;
@@ -1711,7 +1711,7 @@ tbody tr:nth-child(even) {
 	 * Universal selector.
 	 * Reset all content to transparent background, black color, and remove box and text shadows.
 	 */
-  /* line 13, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_print.scss */
+  /* line 13, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_print.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1727,7 +1727,7 @@ tbody tr:nth-child(even) {
   /**
 	 * Underline all links
 	 */
-  /* line 30, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_print.scss */
+  /* line 30, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_print.scss */
   a, .link-block-styled,
   a:visited,
   .link-block-styled:visited {
@@ -1736,21 +1736,21 @@ tbody tr:nth-child(even) {
   /**
 	 * Show URL after links
 	 */
-  /* line 38, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_print.scss */
+  /* line 38, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_print.scss */
   a[href]:after, [href].link-block-styled:after {
     content: " (" attr(href) ")";
   }
   /**
 	 * Don't show URL for internal links
 	 */
-  /* line 45, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_print.scss */
+  /* line 45, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_print.scss */
   a[href^="#"]:after, [href^="#"].link-block-styled:after {
     content: "";
   }
   /**
 	 * Specifies the minimum number of lines to print at the top and bottom of a page.
 	 */
-  /* line 52, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_print.scss */
+  /* line 52, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_print.scss */
   p,
   h1, h2, h3 {
     orphans: 3;
@@ -1759,7 +1759,7 @@ tbody tr:nth-child(even) {
   /**
 	 * Avoid inserting a page break after headers
 	 */
-  /* line 61, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_print.scss */
+  /* line 61, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_print.scss */
   h1, h2, h3 {
     page-break-after: avoid;
   }
@@ -1767,7 +1767,7 @@ tbody tr:nth-child(even) {
 	 * Change border color on blockquotes and preformatted text.
 	 * Avoid page breaks inside the content
 	 */
-  /* line 69, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_print.scss */
+  /* line 69, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_print.scss */
   pre,
   blockquote {
     border-color: #999;
@@ -1776,14 +1776,14 @@ tbody tr:nth-child(even) {
   /**
 	 * Displayed as a table header row group
 	 */
-  /* line 78, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_print.scss */
+  /* line 78, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_print.scss */
   thead {
     display: table-header-group;
   }
   /**
 	 * Avoid inserting a page break inside table rows and images
 	 */
-  /* line 85, /Users/cferdinandi/Sites/go-make-things/wordpress/wp-content/themes/gomakethings/src/sass/components/_print.scss */
+  /* line 85, /Users/cferdinandi/Sites/ditching-jquery/wordpress/wp-content/themes/ditching-jquery/src/sass/components/_print.scss */
   tr,
   img {
     page-break-inside: avoid;

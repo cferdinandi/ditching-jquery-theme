@@ -1,7 +1,7 @@
 {
-	"name": "gomakethings",
-	"version": "10.22.2",
-	"description": "The WordPress theme for GoMakeThings.com",
+	"name": "ditching-jquery",
+	"version": "1.0.0",
+	"description": "The WordPress theme for DitchingjQuery.com",
 	"author": {
 		"name": "Chris Ferdinandi",
 		"url": "http://gomakethings.com"
@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/cferdinandi/gomakethings"
+		"url": "https://github.com/cferdinandi/ditching-jquery-theme"
 	},
 	"devDependencies": {
 		"gulp": "^3.9.0",

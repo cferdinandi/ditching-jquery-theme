@@ -68,7 +68,7 @@
 	function keel_get_post_options() {
 		$saved = (array) get_option( 'keel_post_options' );
 		$defaults = array(
-			'blog_all_posts_heading' => '',
+			'blog_all_posts_heading' => 'Articles',
 			'blog_hide_all_posts_heading' => 'off',
 			'blog_all_posts_message' => '',
 			'blog_all_posts_message_markdown' => '',
