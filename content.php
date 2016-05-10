@@ -20,21 +20,26 @@ $post_options = keel_get_post_options();
 
 		<header>
 
-			<aside class="text-muted">
-				<?php
-					// Dates
-					$date_original = get_the_time( 'F j, Y' );
-					$date_updated = get_the_modified_date( 'F j, Y' );
-				?>
-				<time datetime="<?php echo $date_original; ?>" pubdate><?php echo $date_original; ?></time>
-				<?php
-					// If modified
-					if ( strtotime( $date_updated ) > strtotime( $date_original ) ) :
-				?>
-					/ Updated on <time datetime="<?php echo $date_updated; ?>" pubdate><?php echo $date_updated; ?></time>
-				<?php endif; ?>
-				<?php edit_post_link( __( 'Edit', 'keel' ), ' / ', '' ); ?>
-			</aside>
+			<?php
+				// Don't show date
+				if ( false ) :
+			?>
+				<aside class="text-muted">
+					<?php
+						// Dates
+						$date_original = get_the_time( 'F j, Y' );
+						$date_updated = get_the_modified_date( 'F j, Y' );
+					?>
+					<time datetime="<?php echo $date_original; ?>" pubdate><?php echo $date_original; ?></time>
+					<?php
+						// If modified
+						if ( strtotime( $date_updated ) > strtotime( $date_original ) ) :
+					?>
+						/ Updated on <time datetime="<?php echo $date_updated; ?>" pubdate><?php echo $date_updated; ?></time>
+					<?php endif; ?>
+					<?php edit_post_link( __( 'Edit', 'keel' ), ' / ', '' ); ?>
+				</aside>
+			<?php endif; ?>
 
 			<h1 class="no-padding-top">
 				<?php the_title(); ?>
@@ -53,6 +58,8 @@ $post_options = keel_get_post_options();
 				echo do_shortcode( wpautop( stripslashes( $post_options['blog_posts_message'] ), false ) );
 			}
 		?>
+
+		<?php edit_post_link( __( 'Edit', 'keel' ), '<p>', '</p>' ); ?>
 
 		<?php
 			// Add comments template to blog posts
@@ -86,21 +93,26 @@ $post_options = keel_get_post_options();
 
 		<header>
 
-			<aside class="text-muted">
-				<?php
-					// Dates
-					$date_original = get_the_time( 'F j, Y' );
-					$date_updated = get_the_modified_date( 'F j, Y' );
-				?>
-				<time datetime="<?php echo $date_original; ?>" pubdate><?php echo $date_original; ?></time>
-				<?php
-					// If modified
-					if ( strtotime( $date_updated ) > strtotime( $date_original ) ) :
-				?>
-					/ Updated on <time datetime="<?php echo $date_updated; ?>" pubdate><?php echo $date_updated; ?></time>
-				<?php endif; ?>
-				<?php edit_post_link( __( 'Edit', 'keel' ), ' / ', '' ); ?>
-			</aside>
+			<?php
+				// Hide date
+				if ( false ) :
+			?>
+				<aside class="text-muted">
+					<?php
+						// Dates
+						$date_original = get_the_time( 'F j, Y' );
+						$date_updated = get_the_modified_date( 'F j, Y' );
+					?>
+					<time datetime="<?php echo $date_original; ?>" pubdate><?php echo $date_original; ?></time>
+					<?php
+						// If modified
+						if ( strtotime( $date_updated ) > strtotime( $date_original ) ) :
+					?>
+						/ Updated on <time datetime="<?php echo $date_updated; ?>" pubdate><?php echo $date_updated; ?></time>
+					<?php endif; ?>
+					<?php edit_post_link( __( 'Edit', 'keel' ), ' / ', '' ); ?>
+				</aside>
+			<?php endif; ?>
 
 			<h2 class="no-padding-top margin-bottom-small">
 				<a class="link-plain" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
