@@ -1,5 +1,5 @@
 /*!
- * ditching-jquery v1.0.0: The WordPress theme for DitchingjQuery.com
+ * ditching-jquery v1.1.0: The WordPress theme for DitchingjQuery.com
  * (c) 2016 Chris Ferdinandi
  * MIT License
  * https://github.com/cferdinandi/ditching-jquery-theme
